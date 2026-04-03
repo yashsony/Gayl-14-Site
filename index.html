@@ -654,6 +654,233 @@
   .btn-full-ghost { background: transparent; color: var(--text); border: 1.5px solid var(--border); }
   .btn-full-ghost:hover { border-color: var(--text); }
 
+  /* ─── BLOG SECTION ─── */
+  .blog-section {
+    padding: 100px 1.5rem;
+    background: var(--bg);
+  }
+  .blog-inner { max-width: 1180px; margin: 0 auto; }
+
+  .blog-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Featured blog card */
+  .blog-card-featured {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+  .blog-card-featured:hover { box-shadow: 0 12px 48px rgba(0,0,0,0.1); transform: translateY(-4px); }
+
+  .blog-card-featured .blog-visual {
+    height: 220px;
+    background: linear-gradient(135deg, #FFF4EF 0%, #FFE4D6 60%, #ffd6c2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .blog-card-featured .blog-visual::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 60%, rgba(255,107,53,0.12) 0%, transparent 70%);
+  }
+  .blog-visual-icon {
+    font-size: 5rem;
+    opacity: 0.12;
+    position: absolute;
+    right: -10px;
+    bottom: -15px;
+    transform: rotate(-15deg);
+  }
+  .blog-visual-badge {
+    position: relative;
+    z-index: 1;
+    background: var(--white);
+    border-radius: 16px;
+    padding: 1rem 1.4rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    max-width: 300px;
+    width: 88%;
+  }
+  .blog-visual-badge .quote {
+    font-style: italic;
+    font-size: 0.85rem;
+    color: var(--dark);
+    line-height: 1.55;
+    margin-bottom: 0.4rem;
+  }
+  .blog-visual-badge .source {
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: var(--orange);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .blog-card-featured .blog-body {
+    padding: 1.8rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  /* Standard blog card */
+  .blog-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+  .blog-card:hover { box-shadow: 0 12px 48px rgba(0,0,0,0.1); transform: translateY(-4px); }
+  .blog-card .blog-visual-sm {
+    height: 130px;
+    background: linear-gradient(135deg, #EEF0FF 0%, #e2e5ff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .blog-card .blog-visual-sm .blog-visual-icon {
+    font-size: 5rem;
+    opacity: 0.12;
+    bottom: -15px;
+    right: -10px;
+  }
+  .blog-card .blog-body {
+    padding: 1.4rem 1.6rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  /* Shared blog card parts */
+  .blog-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--orange);
+    background: var(--orange-bg);
+    border: 1px solid rgba(255,107,53,0.18);
+    padding: 0.22rem 0.7rem;
+    border-radius: 50px;
+    margin-bottom: 0.8rem;
+    width: fit-content;
+  }
+  .blog-title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+    margin-bottom: 0.55rem;
+  }
+  .blog-card-featured .blog-title { font-size: 1.3rem; }
+  .blog-card .blog-title { font-size: 1rem; }
+  .blog-excerpt {
+    font-size: 0.875rem;
+    color: var(--muted);
+    line-height: 1.65;
+    margin-bottom: 1.2rem;
+    flex: 1;
+  }
+  .blog-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.76rem;
+    color: var(--muted);
+    padding-top: 0.9rem;
+    border-top: 1px solid var(--border);
+    margin-top: auto;
+  }
+  .blog-av {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    background: var(--orange);
+    color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.6rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .blog-author { font-weight: 600; color: var(--dark); }
+  .blog-rt { margin-left: auto; display: flex; align-items: center; gap: 0.3rem; }
+
+  /* Coming-soon row */
+  .blog-more-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .blog-card-soon {
+    background: var(--white);
+    border: 1.5px dashed var(--border);
+    border-radius: 20px;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .soon-chip {
+    font-size: 0.66rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    background: var(--border);
+    padding: 0.2rem 0.65rem;
+    border-radius: 50px;
+    margin-bottom: 0.2rem;
+    width: fit-content;
+  }
+  .soon-title { font-size: 0.95rem; font-weight: 700; color: var(--dark); line-height: 1.3; }
+  .soon-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.55; }
+
+  .blog-view-all {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--orange);
+    text-decoration: none;
+    transition: gap 0.2s;
+  }
+  .blog-view-all:hover { gap: 0.6rem; }
+
   /* ─── SUPPORT SECTION ─── */
   .support-section {
     padding: 100px 1.5rem;
@@ -883,6 +1110,9 @@
     .pricing-grid { grid-template-columns: 1fr; max-width: 420px; }
     .support-grid { grid-template-columns: 1fr; gap: 2.5rem; }
     .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .blog-grid { grid-template-columns: 1fr; }
+    .blog-more-row { grid-template-columns: 1fr 1fr; }
+    .blog-header { flex-direction: column; align-items: flex-start; }
   }
 
   @media (max-width: 640px) {
@@ -906,6 +1136,7 @@
     #zohoSupportWebToCase { padding: 1.2rem; }
     .zoho-form-header { padding: 1.4rem; }
     .form-actions { flex-direction: column; }
+    .blog-more-row { grid-template-columns: 1fr; }
   }
 </style>
 <!-- Zoho Desk Scripts -->
@@ -923,7 +1154,6 @@
   });
 
   function trimBoth(str) { return jQuery.trim(str); }
-
   function setAllDependancyFieldsMapping() {
     var mapDependancyLabels = getMapDependenySelectValues(jQuery("[id='property(module)']").val(), "JSON_MAP_DEP_LABELS");
     if(mapDependancyLabels) {
@@ -934,13 +1164,11 @@
       }
     }
   }
-
   function getMapDependenySelectValues(module, key) {
     var dependencyObj = jQuery.parseJSON(jQuery("[id='dependent_field_values_" + module + "']").val());
     if(dependencyObj == undefined) return dependencyObj;
     return dependencyObj[key];
   }
-
   function setDependent(obj, isload) {
     var name = obj.id || (obj[0] && obj[0].id) || "";
     var module = jQuery("[id='property(module)']").val();
@@ -1090,6 +1318,7 @@
     <ul class="nav-links" id="navLinks">
       <li><a href="#products">Products</a></li>
       <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#blog">Blog</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="support.html">Support</a></li>
       <li><a href="https://apps.shopify.com/partners/yashsoni" target="_blank">Apps</a></li>
@@ -1313,9 +1542,7 @@
                     </div>
                     <span style="font-size:10px; font-weight:700; color:#555; max-width:130px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Anime Cute Digital...</span>
                   </div>
-                  <div style="width:40px; height:40px; border-radius:8px; background:linear-gradient(135deg,#ffe0f7,#f9c0e8); border:1px solid #f0a0d8; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:20px;">
-                    🎀
-                  </div>
+                  <div style="width:40px; height:40px; border-radius:8px; background:linear-gradient(135deg,#ffe0f7,#f9c0e8); border:1px solid #f0a0d8; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:20px;">🎀</div>
                 </div>
                 <button style="width:100%; background:#d60093; color:white; border:none; border-radius:8px; padding:7px; font-size:10px; font-weight:700; cursor:pointer; letter-spacing:0.03em;">Claim Gift</button>
               </div>
@@ -1350,9 +1577,7 @@
             <div>
               <span style="display:inline-block; background:#f5f3ff; color:#6366f1; font-size:9px; font-weight:700; padding:2px 7px; border-radius:6px; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:6px;">Buy Items</span>
               <div style="background:white; border:1px solid #e8e8ee; border-radius:12px; padding:10px; display:flex; gap:10px; box-shadow:0 1px 4px rgba(0,0,0,0.04);">
-                <div style="width:44px; height:44px; flex-shrink:0; background:linear-gradient(135deg,#fce4ec,#f8bbd0); border-radius:10px; overflow:hidden; border:1px solid #f48fb1; display:flex; align-items:center; justify-content:center; font-size:22px;">
-                  👗
-                </div>
+                <div style="width:44px; height:44px; flex-shrink:0; background:linear-gradient(135deg,#fce4ec,#f8bbd0); border-radius:10px; overflow:hidden; border:1px solid #f48fb1; display:flex; align-items:center; justify-content:center; font-size:22px;">👗</div>
                 <div style="display:flex; flex-direction:column; justify-content:center;">
                   <span style="font-size:12px; font-weight:700; color:#1e293b; text-transform:uppercase; line-height:1.2;">GLAMOUR</span>
                   <span style="font-size:9px; color:#64748b;">collection</span>
@@ -1362,9 +1587,7 @@
             <div>
               <span style="display:inline-block; background:#ecfdf5; color:#10b981; font-size:9px; font-weight:700; padding:2px 7px; border-radius:6px; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:6px;">Get Items</span>
               <div style="background:white; border:1px solid #e8e8ee; border-radius:10px; padding:10px; display:flex; gap:10px; box-shadow:0 1px 4px rgba(0,0,0,0.04);">
-                <div style="width:44px; height:44px; flex-shrink:0; background:linear-gradient(135deg,#e8f5e9,#c8e6c9); border-radius:10px; border:1px solid #a5d6a7; display:flex; align-items:center; justify-content:center; font-size:22px; flex-shrink:0;">
-                  🧴
-                </div>
+                <div style="width:44px; height:44px; flex-shrink:0; background:linear-gradient(135deg,#e8f5e9,#c8e6c9); border-radius:10px; border:1px solid #a5d6a7; display:flex; align-items:center; justify-content:center; font-size:22px; flex-shrink:0;">🧴</div>
                 <div style="display:flex; flex-direction:column; justify-content:space-between; padding:2px 0;">
                   <span style="font-size:10px; font-weight:700; color:#1e293b; line-height:1.3;">Glow Serum...</span>
                   <span style="color:#6366f1; font-weight:700; font-size:10px;">₹6.29</span>
@@ -1419,9 +1642,7 @@
             </div>
             <div style="display:flex; gap:8px; overflow:hidden;">
               <div style="flex-shrink:0; width:88%; background:white; border-radius:12px; border:1px solid #e2e2e6; padding:8px; display:flex; align-items:center; gap:8px; box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-                <div style="width:36px; height:36px; background:linear-gradient(135deg,#fff8e1,#ffecb3); border-radius:8px; border:1px solid #ffe082; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:18px;">
-                  🔑
-                </div>
+                <div style="width:36px; height:36px; background:linear-gradient(135deg,#fff8e1,#ffecb3); border-radius:8px; border:1px solid #ffe082; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:18px;">🔑</div>
                 <div style="flex:1; min-width:0;">
                   <p style="font-weight:700; font-size:9px; color:#1a1c1e; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin-bottom:2px;">Leather Key Fob</p>
                   <p style="font-size:7px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:#001b3d;">Complimentary</p>
@@ -1572,6 +1793,78 @@
   </div>
 </section>
 
+<!-- ── BLOG ── -->
+<section class="blog-section" id="blog">
+  <div class="blog-inner">
+    <div class="blog-header">
+      <div>
+        <p class="section-label">From the Blog</p>
+        <h2 class="section-title">Shopify Growth Playbooks</h2>
+        <p class="section-sub">Practical strategies to grow AOV, run smarter promotions, and build loyal customers.</p>
+      </div>
+      <a href="blog.html" class="blog-view-all">All articles →</a>
+    </div>
+
+    <!-- Top row: featured post + next slot -->
+    <div class="blog-grid">
+
+      <!-- Featured post -->
+      <a href="blog/shopify-aov-strategies.html" class="blog-card-featured fade-up">
+        <div class="blog-visual">
+          <div class="blog-visual-icon">🎁</div>
+          <div class="blog-visual-badge">
+            <div class="quote">"Discounts train customers to wait. Rewards train customers to spend."</div>
+            <div class="source">— Yaki Labs</div>
+          </div>
+        </div>
+        <div class="blog-body">
+          <span class="blog-chip">🛍️ Shopify Growth · eCommerce Strategy</span>
+          <h3 class="blog-title">Your Customers Don't Need a Discount. They Need a Reason to Spend More.</h3>
+          <p class="blog-excerpt">Three cart-level mechanics — Free Gift, Progress Bar with Tiered Rewards, and BOGO — that guide customers toward a higher order value without a single coupon code.</p>
+          <div class="blog-meta">
+            <div class="blog-av">YL</div>
+            <span class="blog-author">Yaki Labs</span>
+            <span>·</span>
+            <span>April 2026</span>
+            <div class="blog-rt">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              12 min read
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Next post slot — replace with real card when blog #2 is ready -->
+      <div class="blog-card-soon fade-up" style="justify-content:center; align-items:center; text-align:center; min-height:300px; display:flex; flex-direction:column; gap:0.6rem;">
+        <div style="font-size:2.5rem; margin-bottom:0.4rem;">✍️</div>
+        <span class="soon-chip">Coming soon</span>
+        <span class="soon-title" style="max-width:220px; margin:0 auto; font-size:1.05rem;">More growth playbooks on the way</span>
+        <span class="soon-desc" style="max-width:210px; margin:0 auto;">We publish deep-dive Shopify guides every month.</span>
+        <a href="mailto:support@gayl-14.info" style="margin-top:0.8rem; font-size:0.82rem; font-weight:600; color:var(--orange); text-decoration:none; display:inline-flex; align-items:center; gap:0.3rem;">Get notified →</a>
+      </div>
+    </div>
+
+    <!-- Upcoming topics row — replace with real blog-card elements as posts go live -->
+    <div class="blog-more-row">
+      <div class="blog-card-soon fade-up">
+        <span class="soon-chip">Upcoming</span>
+        <span class="soon-title">How to Set Your Free Gift Threshold Using Real Shopify Data</span>
+        <span class="soon-desc">A step-by-step guide to calculating the perfect gift unlock value from your own store analytics.</span>
+      </div>
+      <div class="blog-card-soon fade-up">
+        <span class="soon-chip">Upcoming</span>
+        <span class="soon-title">BOGO vs % Discount: Which Actually Grows AOV?</span>
+        <span class="soon-desc">We analyzed 60-day data across 200+ stores. The winner might surprise you.</span>
+      </div>
+      <div class="blog-card-soon fade-up">
+        <span class="soon-chip">Upcoming</span>
+        <span class="soon-title">Progress Bar Psychology: Why 80% Complete Converts Better Than 50%</span>
+        <span class="soon-desc">The goal gradient effect explained — and how to engineer it in your cart experience.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ── SUPPORT ── -->
 <section class="support-section" id="support">
   <div class="support-inner">
@@ -1649,7 +1942,6 @@
                   onsubmit='return zsValidateMandatoryFields()'
                   enctype='multipart/form-data'>
 
-              <!-- Hidden Fields -->
               <input type='hidden' name='xnQsjsdp' value='edbsn31e1a4df0be8c41f033c4b55a9980f30'/>
               <input type='hidden' name='xmIwtLD' value='edbsn516d33cdc127f4839b044b83ed835434e489d42b6adbb522fda4f003968d62e1'/>
               <input type='hidden' name='xJdfEaS' value=''/>
@@ -1662,22 +1954,18 @@
                 <label class='zsFontClass' for='contactName'>Name <span class="zs-required">*</span></label>
                 <input type='text' id='contactName' maxlength='120' name='Contact Name' class='manfieldbdr' placeholder='Enter your full name'/>
               </div>
-
               <div class="zs-field-group">
                 <label class='zsFontClass' for='email'>Email <span class="zs-required">*</span></label>
                 <input type='text' id='email' maxlength='120' name='Email' value='' class='manfieldbdr' placeholder='Enter your email address'/>
               </div>
-
               <div class="zs-field-group">
                 <label class='zsFontClass' for='storeUrl'>Store URL</label>
                 <input type='text' id='storeUrl' maxlength='120' name='Store Url' value='' placeholder='https://your-store.myshopify.com'/>
               </div>
-
               <div class="zs-field-group">
                 <label class='zsFontClass' for='subject'>Subject <span class="zs-required">*</span></label>
                 <input type='text' id='subject' maxlength='255' name='Subject' value='' class='manfieldbdr' placeholder='Brief description of your issue'/>
               </div>
-
               <div class="zs-field-group">
                 <label class='zsFontClass' for='description'>Description</label>
                 <textarea id='description' name='Description' maxlength='3000' placeholder='Please describe your issue or question in detail...'></textarea>
@@ -1742,6 +2030,7 @@
       <div class="footer-col">
         <h4>Resources</h4>
         <ul>
+          <li><a href="#blog">Blog</a></li>
           <li><a href="#support">Support</a></li>
           <li><a href="https://www.privacypolicygenerator.info/live.php?token=TG58t0j9vxrXiIedJPdKylwB5kKKf2t8" target="_blank">Privacy Policy</a></li>
         </ul>

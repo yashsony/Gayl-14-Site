@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Shopify Stores Can Increase AOV Without Relying on Discounts</title>
+<meta name="description" content="Three proven Shopify AOV strategies — Free Gift, Progress Bar with Tiered Discounts, and BOGO — that guide customer behavior without slashing your prices.">
+<meta name="keywords" content="Shopify AOV, Shopify free gift, Shopify BOGO, Shopify progress bar, increase average order value Shopify, tiered discounts Shopify, cart rewards Shopify">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Inter:wght@300;400;500;600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,1,0&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink:        #18181a;
+    --ink-mid:    #38383d;
+    --ink-muted:  #68686f;
+    --ink-faint:  #9d9da8;
+    --surface:    #f9f8f5;
+    --surface-up: #ffffff;
+    --tint:       #f2f0ea;
+    --border:     #e6e4dd;
+    --border-md:  #ccc9bf;
+    --c1:         #c0562a;
+    --c1-bg:      #fdf1ec;
+    --c1-border:  #f0c4ae;
+    --c2:         #1a6e4a;
+    --c2-bg:      #edf7f2;
+    --c2-border:  #a8d9c0;
+    --c3:         #2e4fa3;
+    --c3-bg:      #edf1fc;
+    --c3-border:  #b0c0f0;
+    --serif: 'Playfair Display', Georgia, serif;
+    --sans:  'Inter', system-ui, sans-serif;
+  }
+
+  body { font-family: var(--sans); background: var(--surface); color: var(--ink); line-height: 1.75; font-size: 16px; -webkit-font-smoothing: antialiased; }
+
+  .page { max-width: 740px; margin: 0 auto; padding: 56px 24px 96px; }
+
+  .chip { display: inline-block; font-size: 10.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--c1); background: var(--c1-bg); border: 1px solid var(--c1-border); padding: 4px 12px; border-radius: 100px; margin-bottom: 22px; }
+
+  h1.post-title { font-family: var(--serif); font-size: clamp(30px, 5.5vw, 46px); font-weight: 700; line-height: 1.15; letter-spacing: -.025em; color: var(--ink); margin-bottom: 20px; }
+
+  .subtitle { font-family: var(--serif); font-size: 19px; font-weight: 400; font-style: italic; color: var(--ink-mid); line-height: 1.65; margin-bottom: 32px; }
+
+  .byline { display: flex; align-items: center; gap: 12px; padding: 14px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); font-size: 13px; color: var(--ink-muted); }
+  .av { width: 36px; height: 36px; border-radius: 50%; background: var(--c1); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+  .byline strong { color: var(--ink-mid); font-weight: 500; }
+  .rt { margin-left: auto; font-size: 12px; color: var(--ink-faint); display: flex; align-items: center; gap: 5px; }
+
+  .body p { font-size: 17px; line-height: 1.85; color: var(--ink-mid); margin-bottom: 22px; }
+  .body p.lead { font-family: var(--serif); font-size: 20px; font-style: italic; color: var(--ink); line-height: 1.7; }
+  .body p strong { color: var(--ink); font-weight: 600; }
+  .body em { color: var(--ink); }
+
+  .body h2 { font-family: var(--serif); font-size: clamp(22px, 3.2vw, 30px); font-weight: 700; color: var(--ink); line-height: 1.25; letter-spacing: -.018em; margin: 0 0 16px; }
+  .body h3 { font-size: 11px; font-weight: 700; color: var(--ink-faint); margin: 28px 0 10px; text-transform: uppercase; letter-spacing: .1em; }
+
+  .strategy { border-radius: 18px; padding: 32px 28px 28px; margin: 52px 0 0; border: 1.5px solid; }
+  .strategy.s1 { background: var(--c1-bg); border-color: var(--c1-border); }
+  .strategy.s2 { background: var(--c2-bg); border-color: var(--c2-border); }
+  .strategy.s3 { background: var(--c3-bg); border-color: var(--c3-border); }
+
+  .stag { display: inline-flex; align-items: center; gap: 8px; padding: 5px 14px 5px 6px; border-radius: 100px; font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; margin-bottom: 16px; }
+  .stag .n { width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: #fff; }
+  .s1 .stag { background: #fff; color: var(--c1); border: 1px solid var(--c1-border); }
+  .s2 .stag { background: #fff; color: var(--c2); border: 1px solid var(--c2-border); }
+  .s3 .stag { background: #fff; color: var(--c3); border: 1px solid var(--c3-border); }
+  .s1 .stag .n { background: var(--c1); }
+  .s2 .stag .n { background: var(--c2); }
+  .s3 .stag .n { background: var(--c3); }
+
+  .pq { border-left: 3px solid var(--c1); padding: 2px 0 2px 22px; margin: 36px 0; }
+  .pq p { font-family: var(--serif) !important; font-size: 21px !important; font-style: italic; color: var(--ink) !important; line-height: 1.5 !important; margin-bottom: 0 !important; }
+
+  .note { border-radius: 10px; padding: 16px 20px; margin: 22px 0; font-size: 14.5px; line-height: 1.65; }
+  .note.o { background: #fff3ed; border-left: 4px solid var(--c1); color: var(--ink-mid); }
+  .note.g { background: #e8f5ee; border-left: 4px solid var(--c2); color: var(--ink-mid); }
+  .note.b { background: #eaeffc; border-left: 4px solid var(--c3); color: var(--ink-mid); }
+  .note strong { font-weight: 600; }
+
+  .sc { background: var(--surface-up); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin: 28px 0; }
+  .sc-head { background: var(--ink); color: #fff; padding: 10px 18px; font-size: 11px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; }
+  .sc-body { padding: 6px 18px 14px; }
+  .sc-row { display: flex; justify-content: space-between; align-items: baseline; padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 14.5px; }
+  .sc-row:last-of-type { border-bottom: none; }
+  .sc-row .lbl { color: var(--ink-muted); }
+  .sc-row .val { font-weight: 600; color: var(--ink); }
+  .sc-row .val.g { color: var(--c2); }
+  .sc-row .val.o { color: var(--c1); }
+  .sc-note { font-size: 13px; color: var(--ink-faint); font-style: italic; margin-top: 10px; }
+
+  /* ── Widget Preview Wrapper ── */
+  .widget-preview {
+    background: #f0efec;
+    border: 1.5px solid var(--border-md);
+    border-radius: 14px;
+    padding: 20px;
+    margin: 24px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .widget-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+  .widget-caption {
+    font-size: 12px;
+    color: var(--ink-faint);
+    font-style: italic;
+    text-align: center;
+  }
+
+  /* ── BOGO Card Preview ── */
+  .bogo-preview {
+    background: #f8fafc;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+    width: 100%;
+    max-width: 340px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.08);
+    font-family: var(--sans);
+  }
+  .bogo-preview header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    border-bottom: 1px solid #f1f5f9;
+    background: #fff;
+  }
+  .bogo-preview header .badge {
+    background: #6366f1;
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+  }
+  .bogo-preview header h4 {
+    font-size: 11px;
+    font-weight: 800;
+    color: #1e293b;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+  .bogo-preview .body-inner {
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .bogo-section-tag {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    margin-bottom: 6px;
+  }
+  .bogo-section-tag.buy { background: #f5f3ff; color: #6366f1; }
+  .bogo-section-tag.get { background: #ecfdf5; color: #10b981; }
+  .bogo-item {
+    background: #fff;
+    border: 1px solid #f1f5f9;
+    border-radius: 12px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.05);
+  }
+  .bogo-item-img {
+    width: 42px; height: 42px;
+    border-radius: 9px;
+    background: linear-gradient(135deg,#fde4f5,#e0d4fc);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  .bogo-item-info h5 { font-size: 12px; font-weight: 700; color: #1e293b; margin-bottom: 2px; text-transform: uppercase; }
+  .bogo-item-info span { font-size: 10px; color: #64748b; }
+  .bogo-item-price { font-size: 12px; font-weight: 800; color: #6366f1; margin-left: auto; }
+
+  /* ── Free Gift Card Preview ── */
+  .gift-preview {
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid #fbe0f1;
+    overflow: hidden;
+    width: 100%;
+    max-width: 340px;
+    box-shadow: 0 4px 16px rgba(214,0,147,.08);
+    font-family: var(--sans);
+  }
+  .gift-preview header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    border-bottom: 1px solid #fbe0f1;
+    background: #fff;
+  }
+  .gift-preview header .title-row { display: flex; align-items: center; gap: 6px; }
+  .gift-preview header .title-row svg { color: #d60093; }
+  .gift-preview header h4 { font-size: 12px; font-weight: 800; color: #555; text-transform: uppercase; letter-spacing: .05em; }
+  .gift-preview header .count-badge {
+    background: #fdf2f9;
+    border: 1px solid #fbe0f1;
+    color: #d60093;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 100px;
+  }
+  .gift-preview .body-inner { padding: 14px; }
+  .gift-reward-card {
+    border: 1px solid #f1f1f1;
+    border-radius: 14px;
+    padding: 10px 12px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.05);
+  }
+  .gift-reward-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .gift-reward-top-left { display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; color: #555; }
+  .gift-inner {
+    background: #fdf2f9;
+    border: 1px solid #fbeef8;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .gift-inner-row { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 10px; }
+  .gift-unlocked { font-size: 8px; font-weight: 700; color: #d60093; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 3px; display: flex; align-items: center; gap: 3px; }
+  .gift-name { font-size: 11px; font-weight: 700; color: #555; line-height: 1.35; }
+  .gift-img {
+    width: 40px; height: 40px;
+    border-radius: 9px;
+    background: linear-gradient(135deg,#ffe0f5,#ffd6f0);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+    border: 1px solid #fbe0f1;
+  }
+  .gift-claim-btn {
+    width: 100%;
+    background: #d60093;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+    cursor: default;
+    letter-spacing: .03em;
+  }
+
+  /* ── Progress Bar Preview ── */
+  .pb-demo { background: var(--surface-up); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; margin: 18px 0; }
+  .pb-lbl { font-size: 13px; color: var(--ink-muted); margin-bottom: 12px; }
+  .pb-lbl strong { color: var(--c2); }
+  .pb-tiers { display: flex; gap: 0; margin-bottom: 14px; }
+  .pb-tier { flex: 1; text-align: center; padding: 12px 8px 10px; border: 1px solid var(--border); background: var(--surface-up); }
+  .pb-tier:first-child { border-radius: 8px 0 0 8px; }
+  .pb-tier:last-child { border-radius: 0 8px 8px 0; }
+  .pb-tier.done { background: var(--c2); border-color: var(--c2); }
+  .pb-tier.active { background: #d4f0e2; border-color: var(--c2); }
+  .pb-tier .t-amt { font-size: 15px; font-weight: 700; margin-bottom: 3px; }
+  .pb-tier:not(.done):not(.active) .t-amt { color: var(--ink-faint); }
+  .pb-tier.done .t-amt { color: #fff; }
+  .pb-tier.active .t-amt { color: var(--c2); }
+  .pb-tier .t-rew { font-size: 11px; font-weight: 500; }
+  .pb-tier:not(.done):not(.active) .t-rew { color: var(--ink-faint); }
+  .pb-tier.done .t-rew { color: #b8f0d0; }
+  .pb-tier.active .t-rew { color: var(--c2); }
+  .pb-track { height: 8px; background: var(--tint); border-radius: 100px; overflow: hidden; margin-bottom: 6px; }
+  .pb-fill { height: 100%; border-radius: 100px; background: var(--c2); }
+  .pb-meta { display: flex; justify-content: space-between; font-size: 12px; color: var(--ink-faint); }
+  .pb-meta .hi { color: var(--c2); font-weight: 600; }
+
+  /* ── Goal-Based Tiered Preview ── */
+  .goal-preview {
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid #e2e2e6;
+    overflow: hidden;
+    width: 100%;
+    max-width: 340px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.08);
+    font-family: var(--sans);
+  }
+  .goal-bar-section { padding: 12px 14px 4px; }
+  .goal-bar-label {
+    text-align: center;
+    font-size: 9px;
+    font-weight: 700;
+    color: #767777;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-bottom: 8px;
+  }
+  .goal-track-wrap { position: relative; padding-bottom: 28px; }
+  .goal-track-bg {
+    position: absolute; left: 0; right: 0; top: 5px;
+    height: 6px; background: #e2e2e6; border-radius: 100px;
+  }
+  .goal-track-fill {
+    position: absolute; left: 0; top: 5px;
+    height: 6px; width: 55%; background: #001b3d; border-radius: 100px;
+  }
+  .goal-dots {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    margin-top: 14px;
+  }
+  .goal-dot {
+    width: 20px; height: 20px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    border: 2px solid #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.12);
+    font-size: 11px;
+  }
+  .goal-dot.reached { background: #001b3d; color: #fff; }
+  .goal-dot.pending { background: #e2e2e6; color: #767777; }
+  .goal-carousel-section { padding: 10px 14px 14px; }
+  .goal-carousel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .goal-carousel-header .left { display: flex; align-items: center; gap: 5px; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: #1a1c1e; }
+  .goal-unlocked-badge {
+    font-size: 8px; font-weight: 700;
+    padding: 2px 8px; border-radius: 100px;
+    border: 1px solid rgba(0,27,61,.1);
+    background: rgba(0,27,61,.05);
+    color: #001b3d;
+    text-transform: uppercase; letter-spacing: .06em;
+  }
+  .goal-cards { display: flex; gap: 8px; overflow: hidden; }
+  .goal-gift-card {
+    flex-shrink: 0;
+    width: 88%;
+    background: #fff;
+    border: 1px solid #e2e2e6;
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.06);
+  }
+  .goal-gift-card.dim { opacity: 0.5; }
+  .goal-gift-img {
+    width: 36px; height: 36px;
+    border-radius: 8px;
+    background: linear-gradient(135deg,#e8f0ff,#d4e4ff);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  .goal-gift-info { flex: 1; min-width: 0; }
+  .goal-gift-info p { font-size: 10px; font-weight: 700; color: #1a1c1e; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 2px; }
+  .goal-gift-info span { font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: #001b3d; }
+  .goal-claim-btn {
+    background: #001b3d; color: #fff;
+    font-size: 8px; font-weight: 700;
+    padding: 5px 9px; border-radius: 7px;
+    text-transform: uppercase; letter-spacing: .05em;
+    white-space: nowrap;
+  }
+  .goal-select-btn {
+    background: transparent;
+    border: 1px solid rgba(0,27,61,.2);
+    color: #001b3d;
+    font-size: 8px; font-weight: 700;
+    padding: 5px 9px; border-radius: 7px;
+    text-transform: uppercase; letter-spacing: .05em;
+    white-space: nowrap;
+  }
+
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0; }
+  .cmp-card { border-radius: 10px; padding: 16px 18px; border: 1px solid var(--border); background: var(--surface-up); }
+  .cmp-card.bad { border-color: #f5c4c4; background: #fff5f5; }
+  .cmp-card.good { border-color: var(--c2-border); background: var(--c2-bg); }
+  .cmp-label { font-size: 10.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 8px; }
+  .cmp-card.bad .cmp-label { color: #b03030; }
+  .cmp-card.good .cmp-label { color: var(--c2); }
+  .cmp-card p { font-size: 13.5px; color: var(--ink-mid); line-height: 1.6; margin: 0; }
+
+  .bogo-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin: 18px 0; }
+  .bg-card { border-radius: 10px; padding: 14px 14px 12px; background: var(--surface-up); border: 1px solid var(--border); }
+  .bg-card .bg-tag { font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--c3); background: var(--c3-bg); padding: 3px 8px; border-radius: 100px; margin-bottom: 8px; display: inline-block; }
+  .bg-card .bg-name { font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 5px; }
+  .bg-card .bg-desc { font-size: 12px; color: var(--ink-muted); line-height: 1.55; }
+
+  .app-cta { border-radius: 14px; margin: 36px 0; padding: 22px 24px; background: var(--ink); color: #fff; display: flex; align-items: center; gap: 18px; flex-wrap: wrap; text-decoration: none; }
+  .app-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--c1); flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 22px; }
+  .app-text { flex: 1; min-width: 200px; }
+  .app-text strong { display: block; font-size: 15px; font-weight: 600; margin-bottom: 3px; color: #fff; }
+  .app-text span { font-size: 13px; color: #a0a0b0; line-height: 1.5; }
+  .app-btn { display: inline-block; background: var(--c1); color: #fff; font-size: 13px; font-weight: 600; padding: 10px 18px; border-radius: 8px; white-space: nowrap; flex-shrink: 0; }
+
+  .div { text-align: center; color: var(--border-md); letter-spacing: .3em; margin: 48px 0; font-size: 13px; }
+
+  .post-footer { margin-top: 64px; padding-top: 32px; border-top: 1px solid var(--border); }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+  .tag { font-size: 12px; font-weight: 500; color: var(--ink-mid); background: var(--tint); padding: 5px 12px; border-radius: 100px; border: 1px solid var(--border); }
+
+  @media (max-width: 520px) {
+    .strategy { padding: 22px 18px 18px; }
+    .bogo-grid, .compare { grid-template-columns: 1fr; }
+    .pb-tiers { flex-direction: column; }
+    .pb-tier { border-radius: 8px !important; margin-bottom: 4px; }
+    .app-cta { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<article class="page">
+
+  <header>
+    <div class="chip">Shopify Growth · eCommerce Strategy</div>
+    <h1 class="post-title">Your Customers Don't Need a Discount.<br>They Need a Reason to Spend More.</h1>
+    <p class="subtitle">Three cart-level mechanics that guide customers toward a higher order value — without a single coupon code.</p>
+    <div class="byline">
+      <div class="av">YL</div>
+      <div>
+        <strong><a href="https://gayl-14.info/" target="_blank" style="color:var(--ink-mid);text-decoration:none;border-bottom:1px solid var(--border-md);">Yaki Labs</a></strong> — Cart Progress Bar &amp; Free Gift<br>
+        <span style="font-size:12px;color:#9d9da8;">April 2026 · 12 min read</span>
+      </div>
+      <div class="rt">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        12 min
+      </div>
+    </div>
+  </header>
+
+  <div class="body" style="margin-top:36px;">
+
+    <p class="lead">We built our app after watching hundreds of Shopify merchants run the same exhausting loop — discount, spike, crash, repeat. The stores that actually grew their average order value did something different. They stopped asking customers to pay less. They started giving them reasons to spend more.</p>
+
+    <p>That's the core idea behind <strong>Cart Progress Bar &amp; Free Gift</strong>. We focused on exactly three mechanics — Free Gift, Progress Bar with Tiered Rewards, and BOGO — because these three consistently move the AOV number without eroding your margin. Here's how each one works, why the psychology behind it holds, and what setting it up actually looks like on your store.</p>
+
+    <div class="pq">
+      <p>"Discounts train customers to wait. Rewards train customers to spend."</p>
+    </div>
+
+    <p>That distinction sounds subtle. It isn't. A discount tells a customer your product wasn't worth its original price. A reward tells them they made a smart decision. These land completely differently — and they produce completely different repeat-purchase behavior over time.</p>
+
+    <div class="div">· · ·</div>
+
+    <!-- S1: FREE GIFT -->
+    <div class="strategy s1">
+      <div class="stag"><span class="n">1</span> Free Gift</div>
+      <h2>Free Gift — When Spending Feels Like Earning</h2>
+
+      <p>The psychology is well-documented but still wildly underused. A discount reduces the price of something the customer was already getting. A free gift adds something they weren't expecting. These are not economically equivalent in the customer's mind — even when the math is identical.</p>
+
+      <p>Behavioral economists call it the <strong>zero price effect</strong>. We respond disproportionately to the word "free" compared to an equivalent price cut. A customer who sees "add ₹150 more to unlock a free travel pouch" doesn't experience this as "spend more money." They experience it as "earn a free thing." The mental transaction shifts from loss to gain. That shift is everything.</p>
+
+      <!-- FREE GIFT WIDGET PREVIEW -->
+      <div class="widget-preview">
+        <div class="widget-label">🎁 Free Gift Widget — In-Cart View</div>
+
+        <div class="gift-preview">
+          <header>
+            <div class="title-row">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/></svg>
+              <h4>Rewards</h4>
+            </div>
+            <div class="count-badge">1 TOTAL</div>
+          </header>
+
+          <div class="body-inner">
+            <div class="gift-reward-card">
+              <div class="gift-reward-top">
+                <div class="gift-reward-top-left">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+                  1 gift available
+                </div>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="3"><polyline points="18 15 12 9 6 15"/></svg>
+              </div>
+
+              <div class="gift-inner">
+                <div class="gift-inner-row">
+                  <div>
+                    <div class="gift-unlocked">
+                      <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                      Unlocked!
+                    </div>
+                    <div class="gift-name">Travel Pouch — Signature</div>
+                  </div>
+                  <div class="gift-img">🛍️</div>
+                </div>
+                <div class="gift-claim-btn">Claim Gift</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="widget-caption">Locked → unlocked gift state in the cart drawer. That visual moment of unlocking is half the mechanic.</div>
+      </div>
+
+      <h3>Setting the right threshold</h3>
+
+      <p>Don't guess. Pull your 90-day median order value and set the free gift threshold at <strong>115–120% of that number</strong>. This ensures the typical customer lands in the cart already 75–85% of the way there — close enough to feel the pull, far enough to actually add something to their cart.</p>
+
+      <div class="sc">
+        <div class="sc-head">Real Example — Indian Skincare D2C</div>
+        <div class="sc-body">
+          <div class="sc-row"><span class="lbl">Median cart before free gift</span><span class="val">₹850</span></div>
+          <div class="sc-row"><span class="lbl">Gift threshold set at</span><span class="val">₹1,000</span></div>
+          <div class="sc-row"><span class="lbl">Gift item — travel-size moisturiser</span><span class="val">Perceived ₹220 · Actual cost ₹55</span></div>
+          <div class="sc-row"><span class="lbl">AOV lift after 30 days</span><span class="val g">+₹168 per order (avg)</span></div>
+          <div class="sc-row"><span class="lbl">Net margin added per order</span><span class="val g">+₹113</span></div>
+          <p class="sc-note">₹168 incremental revenue, ₹55 of COGS. No coupon code was created, no discount was offered.</p>
+        </div>
+      </div>
+
+      <h3>Choosing the gift item</h3>
+
+      <p>The most common mistake: choosing a gift that feels cheap. If the customer thinks "oh, just that" — the effect collapses. The gift's <strong>perceived value should be at least 15–20% of the threshold</strong>, even if your actual cost is 5–8%. A ₹200 perceived item that costs you ₹50 hits the sweet spot perfectly.</p>
+
+      <p>In our app, you can auto-add the gift when the threshold is reached — no customer action required. Or set it to manual claim, which works well for high-perceived-value gifts because clicking "claim your gift" creates its own small moment of reward. We've seen both modes outperform in different store contexts. Try both.</p>
+
+      <div class="note o">
+        <strong>App note:</strong> Our free gift widget shows the gift item visually in a locked state while the customer is still building their cart. That locked image — sitting there, almost within reach — converts 3–4× better than a line of text saying "add ₹150 for a free gift." The visual is doing the work.
+      </div>
+    </div>
+
+    <div class="div">· · ·</div>
+
+    <!-- S2: PROGRESS BAR + TIERED -->
+    <div class="strategy s2">
+      <div class="stag"><span class="n">2</span> Progress Bar with Tiered Discounts</div>
+      <h2>Progress Bar + Tiered Discounts — The Always-On AOV Engine</h2>
+
+      <p>Most people think of the progress bar as a free shipping widget. That's underselling it by a wide margin. What the progress bar actually does is activate <strong>goal proximity bias</strong> at the exact moment of highest purchase intent — when the customer is already in the cart, credit card in hand.</p>
+
+      <p>When someone sees they're 80% toward a reward, abandoning the cart feels like losing progress, not just leaving a website. This is the <em>goal gradient effect</em> — we accelerate effort as we near a goal. The closer we are, the harder we push. Shoppers with a progress bar at 80% add to cart more than shoppers who see nothing at all.</p>
+
+      <p>The tiered structure makes this dramatically more powerful. Instead of one goal, you give customers a ladder — three spend levels, each with a better reward. Now the bar doesn't just motivate customers near one threshold. It continuously pulls everyone toward the next level above wherever they happen to be.</p>
+
+      <div class="pb-demo">
+        <div class="pb-lbl">Your cart: <strong>₹1,050</strong> — Free shipping unlocked. Add ₹450 more for 10% off your entire order.</div>
+        <div class="pb-tiers">
+          <div class="pb-tier done">
+            <div class="t-amt">₹800</div>
+            <div class="t-rew">Free Shipping ✓</div>
+          </div>
+          <div class="pb-tier active">
+            <div class="t-amt">₹1,500</div>
+            <div class="t-rew">10% Off</div>
+          </div>
+          <div class="pb-tier">
+            <div class="t-amt">₹2,500</div>
+            <div class="t-rew">Free Gift + 15% Off</div>
+          </div>
+        </div>
+        <div class="pb-track"><div class="pb-fill" style="width:52%;"></div></div>
+        <div class="pb-meta">
+          <span>₹0</span>
+          <span class="hi">₹1,050 of ₹1,500</span>
+          <span>₹2,500</span>
+        </div>
+      </div>
+
+      <p>In this demo, the customer already passed Tier 1 at ₹800. The bar is now pulling them toward ₹1,500. Once they hit that, Tier 3 becomes the next gravitational force. The bar never loses urgency because there's always a next level visible — always a reason to add one more thing.</p>
+
+      <h3>Threshold configuration — the one number that matters most</h3>
+
+      <p>Tier 1 placement is the most important configuration decision. Set it at <strong>110–120% of your median cart value</strong> so the typical customer is already 75–85% there when they first see the bar. Too low — trivially easy, no pull. Too high — feels unreachable, customer ignores it.</p>
+
+      <div class="compare">
+        <div class="cmp-card bad">
+          <div class="cmp-label">❌ Common mistake</div>
+          <p>Tier 1 at ₹2,000 when median cart is ₹850. Bar shows 42%. Feels impossible. Customer ignores it entirely.</p>
+        </div>
+        <div class="cmp-card good">
+          <div class="cmp-label">✅ What actually works</div>
+          <p>Tier 1 at ₹1,000 when median cart is ₹850. Bar shows 85%. Feels achievable. Customer adds one more item.</p>
+        </div>
+      </div>
+
+      <h3>Which reward works at which tier</h3>
+
+      <p><strong>Free shipping at Tier 1</strong> — high perceived value, low actual cost, universally understood. <strong>Percentage discount at Tier 2</strong> — motivates a meaningful spend jump. <strong>Free gift + discount at Tier 3</strong> — by this point the customer is spending significantly and the combination feels like a genuine reward, not a consolation prize.</p>
+
+      <p>If your gross margin is under 45%, lean toward non-monetary rewards at upper tiers: early access to new collections, priority shipping, exclusive product variants. These have near-zero cost and still trigger the same reward response — because recognition and status are real motivators, not just price.</p>
+
+      <div class="note g">
+        <strong>App note:</strong> In our app, the progress bar runs on every cart, every day — not as a campaign you switch on for sales events. That permanence is by design. It becomes part of how your store behaves. Tiered rewards are configured once and run automatically. When a customer crosses a tier, the widget updates in real time. That visual tick of unlocking something is a small moment that consistently drives the next add-to-cart action.
+      </div>
+
+      <!-- GOAL-BASED TIERED PROGRESS BAR PREVIEW -->
+      <div class="widget-preview">
+        <div class="widget-label">📊 Progress Bar with Tiered Discounts — Cart View</div>
+
+        <div class="goal-preview">
+          <div class="goal-bar-section">
+            <div class="goal-bar-label">$30 away from Free Gift!</div>
+            <div class="goal-track-wrap">
+              <div class="goal-track-bg"></div>
+              <div class="goal-track-fill"></div>
+              <div class="goal-dots">
+                <div class="goal-dot reached">🎁</div>
+                <div class="goal-dot reached">🚚</div>
+                <div class="goal-dot pending">🏷️</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="goal-carousel-section">
+            <div class="goal-carousel-header">
+              <div class="left">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#001b3d" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                Select Your Gift
+              </div>
+              <div class="goal-unlocked-badge">Unlocked</div>
+            </div>
+
+            <div class="goal-cards">
+              <div class="goal-gift-card">
+                <div class="goal-gift-img">🔑</div>
+                <div class="goal-gift-info">
+                  <p>Leather Key Fob</p>
+                  <span>Complimentary</span>
+                </div>
+                <div class="goal-claim-btn">Claim</div>
+              </div>
+              <div class="goal-gift-card dim">
+                <div class="goal-gift-img">👛</div>
+                <div class="goal-gift-info">
+                  <p>Slim Card Wallet</p>
+                  <span>Complimentary</span>
+                </div>
+                <div class="goal-select-btn">Select</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="widget-caption">Three-tier cart progress bar — Tier 1 unlocked (free gift), Tier 2 unlocked (free shipping), Tier 3 upcoming (discount tag). Gift carousel lets customer choose their reward.</div>
+      </div>
+
+      <div class="sc">
+        <div class="sc-head">Threshold Setup Guide — Based on Median Cart of ₹880</div>
+        <div class="sc-body">
+          <div class="sc-row"><span class="lbl">Tier 1 — Free Shipping</span><span class="val">₹1,000 &nbsp;(114% of median)</span></div>
+          <div class="sc-row"><span class="lbl">Tier 2 — 10% Discount</span><span class="val">₹1,800</span></div>
+          <div class="sc-row"><span class="lbl">Tier 3 — Free Gift + 15% Off</span><span class="val">₹2,800</span></div>
+          <div class="sc-row"><span class="lbl">Customers completing Tier 1 (observed)</span><span class="val g">~31% of all carts</span></div>
+          <p class="sc-note">~1 in 3 carts crosses Tier 1 when it's set at 115% of median AOV. That conversion rate drops sharply above 130%.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="div">· · ·</div>
+
+    <!-- S3: BOGO -->
+    <div class="strategy s3">
+      <div class="stag"><span class="n">3</span> BOGO</div>
+      <h2>BOGO — A Volume Driver, Not a Discount in Disguise</h2>
+
+      <p>BOGO has an image problem. Most people see it as "discount but make it confusing." That's because most implementations are exactly that — give away a second unit, call it a promotion, wonder why margin dropped. Done wrong, BOGO is just a discount. Done right, it's a <strong>purchase behavior shift</strong>.</p>
+
+      <p>The goal of a properly structured BOGO offer isn't to reduce effective unit price. It's to move customers from "I need this one thing" to "I should get more than I planned." That's an AOV win regardless of the mechanics underneath it — and it compounds because customers who buy more discover more, and come back for more.</p>
+
+      <div class="bogo-grid">
+        <div class="bg-card">
+          <div class="bg-tag">Structure A</div>
+          <div class="bg-name">Cross-category</div>
+          <div class="bg-desc">Buy Face Wash → get mini Toner free. AOV goes up. Customer discovers a second product they might repurchase at full price next time.</div>
+        </div>
+        <div class="bg-card">
+          <div class="bg-tag">Structure B</div>
+          <div class="bg-name">Gifting frame</div>
+          <div class="bg-desc">"Buy one, get one to gift." Customer doubles units and becomes your distribution channel — their recipient is your next customer.</div>
+        </div>
+        <div class="bg-card">
+          <div class="bg-tag">Structure C</div>
+          <div class="bg-name">Volume BOGO</div>
+          <div class="bg-desc">"Buy 2, get 1 free" on consumables. Inventory velocity improves. Repurchase cycle extends naturally. Margin is mildly compressed but volume lifts.</div>
+        </div>
+      </div>
+
+      <p>Each structure has a different underlying goal. Cross-category is a discovery tool. Gifting frame is a new-customer acquisition tool. Volume is an inventory and LTV tool. Pick based on what your store actually needs — not just what sounds appealing in a marketing meeting.</p>
+
+      <h3>The one question every BOGO should pass</h3>
+
+      <p>Before setting any BOGO live: <em>"If this customer comes back next week and buys just one unit at full price — was this offer worth running?"</em> If yes, because they discovered the product, gifted it to someone new, or needed the stock — it was growth spend. If no — it was a discount with extra steps. Don't run it.</p>
+
+      <!-- BOGO WIDGET PREVIEW -->
+      <div class="widget-preview">
+        <div class="widget-label">🛍️ BOGO Widget — Cart Drawer View</div>
+
+        <div class="bogo-preview">
+          <header>
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span class="badge">Offer</span>
+              <h4>BOGO 50% Off</h4>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </header>
+
+          <div class="body-inner">
+            <div>
+              <div class="bogo-section-tag buy">Buy Items</div>
+              <div class="bogo-item">
+                <div class="bogo-item-img">🎀</div>
+                <div class="bogo-item-info">
+                  <h5>Barbie</h5>
+                  <span>Collection</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="bogo-section-tag get">Get Items</div>
+              <div class="bogo-item">
+                <div class="bogo-item-img">✨</div>
+                <div class="bogo-item-info">
+                  <h5>Holiday Barbie</h5>
+                  <span>Limited Edition</span>
+                </div>
+                <div class="bogo-item-price">₹6.29</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="widget-caption">BOGO offer displayed in the Shopify cart drawer — "Buy 2 Get 1 Free" with live qualification status and product imagery.</div>
+      </div>
+
+      <div class="note b">
+        <strong>App note:</strong> Our BOGO builder supports fully flexible reward rules — Buy X quantity, get Y product free or discounted, triggered by specific products or collections. You can stack it with the progress bar so the BOGO qualifies as one of the tiered rewards. Both incentives appear in the same cart view, reinforcing each other without competing for attention.
+      </div>
+
+      <div class="sc">
+        <div class="sc-head">BOGO Margin Check — Run This Before Going Live</div>
+        <div class="sc-body">
+          <div class="sc-row"><span class="lbl">Gross margin on trigger product</span><span class="val">58%</span></div>
+          <div class="sc-row"><span class="lbl">COGS of the free/discounted unit</span><span class="val o">₹120</span></div>
+          <div class="sc-row"><span class="lbl">Incremental revenue vs single-unit order</span><span class="val g">+₹340</span></div>
+          <div class="sc-row"><span class="lbl">Net margin after BOGO unit cost</span><span class="val g">Positive (+₹220)</span></div>
+          <p class="sc-note">BOGO is profitable when incremental revenue from the trigger purchase comfortably covers the cost of the free unit. Always model this first.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="div">· · ·</div>
+
+    <h2>Run All Three Together — They Reinforce Each Other</h2>
+
+    <p>The mistake most Shopify stores make is treating these as rotating campaigns. "Free gift this month, BOGO next." That's using tools as seasonal decorations rather than permanent infrastructure.</p>
+
+    <p>The stores we've seen get the most AOV lift run all three simultaneously but in layers. The progress bar runs on every cart, always. The free gift sits inside the bar as a tier reward. The BOGO is a product-level overlay on specific SKUs you want to move. Each mechanic is doing a different job. When they're all visible in the same cart view, they compound — and the customer experience feels coherent, not overwhelming.</p>
+
+    <div class="note g">
+      <strong>Recommended starting stack:</strong> Progress bar first (always on, Tier 1 at 115% of your median AOV). Free gift as the Tier 1 or Tier 3 reward. BOGO on high-velocity or new-discovery SKUs. Measure 30 full days before adjusting any threshold — week-over-week is too noisy to read anything meaningful.
+    </div>
+
+    <h3>What to actually track</h3>
+
+    <p>Watch <strong>threshold conversion rate</strong> (what % of carts actually reach Tier 1) and <strong>margin-adjusted AOV</strong>, not raw AOV. It's easy to inflate a number by giving things away. The goal is profitable AOV growth. Compare 30-day windows before and after implementation, on the same cohort profile.</p>
+
+    <p>Don't panic in the first week. These mechanics can briefly suppress conversion rate as customers recalibrate. Give it 21–28 days. The cohort that converts through the bar will have materially higher order values. That's the number that changes your business.</p>
+
+    <div class="pq">
+      <p>"AOV isn't a number you target. It's a customer behavior you architect."</p>
+    </div>
+
+    <p>Every mechanic in this post does the same thing in a different wrapper: it makes the customer feel like the agent of a smart decision, rather than the passive recipient of a discount. That feeling is durable. It compounds into repeat purchase behavior. And it doesn't come with the slow margin bleed of a coupon code dependency.</p>
+
+    <p>That's what we built the app to enable — not just the automation, but the right mechanics running permanently in the right order. If you want to see all three working on a live store, the demo store link on our app page has them all running simultaneously.</p>
+
+    <a class="app-cta" href="https://gayl-14.info/" target="_blank">
+      <div class="app-icon">🎁</div>
+      <div class="app-text">
+        <strong>Cart Progress Bar &amp; Free Gift — by Yaki Labs</strong>
+        <span>Free Gift · Progress Bar with Tiered Discounts · BOGO — all three in one app. Free plan available. Setup under 10 minutes.</span>
+      </div>
+      <div class="app-btn">Install Free →</div>
+    </a>
+
+  </div>
+
+  <footer class="post-footer">
+    <div class="tags">
+      <span class="tag">#ShopifyAOV</span>
+      <span class="tag">#ShopifyFreeGift</span>
+      <span class="tag">#ShopifyBOGO</span>
+      <span class="tag">#ShopifyProgressBar</span>
+      <span class="tag">#CartRewards</span>
+      <span class="tag">#TieredDiscounts</span>
+      <span class="tag">#D2CGrowth</span>
+      <span class="tag">#YakiLabs</span>
+    </div>
+
+  </footer>
+
+</article>
+</body>
+</html>
