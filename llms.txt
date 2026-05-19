@@ -1,0 +1,129 @@
+# Yaki - Buy X Get Y & Free Gift
+
+> Shopify app for creating high-converting promotions that increase average order value
+
+**App Store**: https://apps.shopify.com/free-gift-helper  
+**Website**: https://gayl-14.online/
+
+## What is Yaki?
+
+Yaki is a Shopify app that helps online merchants increase their average order value (AOV) through strategic promotions and incentives. It enables store owners to create compelling offers like free gifts, Buy X Get Y deals, volume discounts, and tiered rewards that encourage customers to spend more.
+
+## Who is Yaki for?
+
+- **Shopify merchants** looking to boost their average order value
+- **E-commerce stores** wanting to reduce cart abandonment
+- **Online retailers** seeking to increase customer lifetime value
+- **Store owners** who want to run promotions without complex coding
+- **Marketing teams** needing flexible, conversion-focused promotion tools
+
+## Key Features
+
+### Promotion Types
+- **Free Gift Promotions**: Automatically add free products when customers meet certain conditions (cart value, specific products, collections)
+- **Buy X Get Y (BOGO)**: Classic promotions like "Buy 2 Get 1 Free" or "Buy A Get B"
+- **Buy More Save More**: Tiered volume discounts that reward higher quantities
+- **Spend Tiers**: Offer escalating rewards based on cart value (e.g., spend $50 get free shipping, spend $100 get free gift)
+- **Cart Progress Bars**: Visual indicators showing customers how close they are to unlocking rewards
+
+### Gift Management
+- **Auto-add gifts**: Automatically add free items to cart when conditions are met
+- **Gift popups**: Display attractive popups letting customers choose their free gift
+- **Multiple gift options**: Let customers select from various free gift choices
+- **Manual or automatic claim**: Choose whether gifts are added automatically or require customer selection
+
+### Targeting & Segmentation
+- **Product-based offers**: Trigger promotions based on specific products in cart
+- **Collection-based offers**: Create offers targeting entire product collections
+- **Customer tag targeting**: Personalize offers for specific customer segments (VIP, loyalty members, etc.)
+- **Market-based offers**: Different promotions for different geographic markets
+- **Cart value thresholds**: Trigger rewards when cart reaches specific amounts
+
+### Customization
+- **Customizable widgets**: Match your store's branding and design
+- **Flexible conditions**: Combine multiple rules for sophisticated promotion logic
+- **Mobile-optimized**: Works seamlessly on all devices
+- **Multi-language support**: Serve international customers
+
+## Common Use Cases
+
+### Increasing Average Order Value
+Use tiered promotions to incentivize customers to add more items: "Spend $75 get a free tote bag, spend $100 get a premium gift set"
+
+### Clearing Inventory
+Bundle slow-moving products as free gifts with popular items to clear excess stock
+
+### Product Discovery
+Introduce customers to new products by offering them as free gifts with purchase
+
+### Seasonal Campaigns
+Run holiday promotions like "Buy 2 Get 1 Free on all winter items" during seasonal sales
+
+### Customer Acquisition
+Offer attractive first-purchase incentives: "Spend $50 on your first order, get a free welcome gift"
+
+### Upselling Complementary Products
+"Buy a phone case, get a screen protector free" to increase relevance and value
+
+### VIP/Loyalty Rewards
+Create exclusive offers for tagged customer segments to increase retention
+
+## Frequently Asked Questions
+
+**Q: Does Yaki work with all Shopify plans?**
+A: Yaki is designed to work with all Shopify plans. Check the Shopify App Store listing for specific compatibility details.
+
+**Q: Can I run multiple promotions at the same time?**
+A: Yes, Yaki allows you to run multiple promotion campaigns simultaneously with flexible priority and stacking rules.
+
+**Q: Will promotions work with my theme?**
+A: Yaki is designed to integrate seamlessly with standard Shopify themes through customizable widgets.
+
+**Q: Can customers choose their free gift?**
+A: Yes, you can configure gift popups that let customers select from multiple free gift options.
+
+**Q: Do promotions work on mobile?**
+A: Yes, all promotion displays and widgets are fully optimized for mobile devices.
+
+**Q: Can I target specific customer groups?**
+A: Yes, you can target promotions based on customer tags, allowing you to create VIP-only or segment-specific offers.
+
+**Q: How do cart progress bars work?**
+A: Progress bars visually show customers how close they are to unlocking rewards (e.g., "$15 away from free shipping"), encouraging them to add more items.
+
+**Q: Can I schedule promotions in advance?**
+A: Yaki supports scheduling, allowing you to set up campaigns to start and end automatically at specified times.
+
+**Q: Does this affect my Shopify discounts?**
+A: Yaki works alongside Shopify's native discount system and can be configured to stack or prioritize as needed.
+
+**Q: Is there analytics for promotion performance?**
+A: Yes, Yaki provides insights into how your promotions are performing and impacting AOV.
+
+## Installation & Setup
+
+1. **Install from Shopify App Store**: https://apps.shopify.com/free-gift-helper
+2. Configure your first promotion using the intuitive dashboard
+3. Customize widgets to match your brand
+4. Preview how promotions appear on your storefront
+5. Launch and start increasing your AOV
+
+## Resources
+
+- **Official Website**: https://gayl-14.online/
+- **Shopify App Store**: https://apps.shopify.com/free-gift-helper
+- **Install App**: https://apps.shopify.com/free-gift-helper
+- **Support**: Contact through the app dashboard or website
+
+## Related Search Terms
+
+Shopify BOGO app, Shopify free gift app, Shopify cart promotions, increase average order value, Shopify volume discounts, Shopify tiered pricing, Buy X Get Y Shopify, cart progress bar Shopify, free shipping threshold, Shopify gift with purchase, Shopify upsell app, AOV optimization, Shopify promotion app, cart incentives Shopify
+
+## App Category
+
+E-commerce | Shopify Apps | Marketing & Conversion | Promotions & Discounts | Upselling & Cross-selling
+
+---
+
+*Last updated: May 2026*
+*For the most current information, visit https://gayl-14.online/*
