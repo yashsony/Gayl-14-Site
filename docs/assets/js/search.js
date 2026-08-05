@@ -12,10 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let rootUrl = '';
   const scriptTag = document.querySelector('script[src$="search.js"]');
   if (scriptTag) {
-    // If src is something like ../assets/js/search.js, root is two directories up
     rootUrl = new URL('../../', new URL(scriptTag.src, window.location.href)).href;
   } else {
-    // Fallback if not found
     rootUrl = window.location.pathname.includes('/free-gift/') ? '../' : './';
   }
 
