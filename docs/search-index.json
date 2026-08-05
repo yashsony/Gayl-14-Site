@@ -1,0 +1,16 @@
+[
+  {
+    "id": "home",
+    "title": "Yaki Documentation",
+    "description": "Welcome to Yaki. Learn how to setup Buy X Get Y and Free Gift promotions.",
+    "url": "index.html",
+    "keywords": ["home", "getting started", "welcome"]
+  },
+  {
+    "id": "free-gift",
+    "title": "Create Free Gift Promotion",
+    "description": "Learn how to create a Free Gift promotion in Yaki.",
+    "url": "free-gift/index.html",
+    "keywords": ["free gift", "promotion", "gift product", "setup"]
+  }
+]

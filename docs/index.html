@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yaki Documentation</title>
+  <meta name="description"
+    content="Learn how to configure and use Yaki to create powerful Buy X Get Y and Free Gift promotions.">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/docs.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <!-- GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="layout-wrapper">
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-container">
+        <div class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-gift">
+            <polyline points="20 12 20 22 4 22 4 12" />
+            <rect width="20" height="5" x="2" y="7" />
+            <line x1="12" x2="12" y1="22" y2="7" />
+            <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" />
+            <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
+          </svg>
+          Yaki Labs Docs
+        </div>
+        <div class="header-search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="search-icon lucide lucide-search">
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.3-4.3" />
+          </svg>
+          <input type="text" id="search-input" placeholder="Search documentation... (Cmd+K)" readonly>
+        </div>
+        <button class="mobile-menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-menu">
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="main-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="nav-group">
+          <div class="nav-group-title">Getting Started</div>
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link active">Introduction</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-group">
+          <div class="nav-group-title">Promotions</div>
+          <ul class="nav-list">
+            <li><a href="free-gift/index.html" class="nav-link">Free Gift</a></li>
+            <li><a href="#" class="nav-link">Buy X Get Y</a></li>
+            <li><a href="#" class="nav-link">BOGO</a></li>
+            <li><a href="#" class="nav-link">Goal Based Tiered Discount</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-group">
+          <div class="nav-group-title">Configuration</div>
+          <ul class="nav-list">
+            <li><a href="customPlacement.html" class="nav-link">Custom Placement</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-group">
+          <div class="nav-group-title">Support</div>
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link">Troubleshooting</a></li>
+            <li><a href="#" class="nav-link">FAQ</a></li>
+          </ul>
+        </div>
+
+
+      </aside>
+
+      <!-- Content -->
+      <main class="content-area">
+        <div class="content-inner">
+          <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>Introduction</span>
+          </div>
+
+          <h1>Welcome to Yaki Documentation</h1>
+          <p>Yaki helps you build powerful "Buy X Get Y" and "Free Gift" promotions to increase your average order value
+            and customer retention.</p>
+
+          <h2>Getting Started</h2>
+          <p>Explore the sidebar to learn how to configure various promotion types. Yaki is designed to be highly
+            flexible, supporting everything from simple BOGO offers to complex multi-tier volume discounts.</p>
+
+          <div class="docs-nav">
+            <div class="docs-nav-prev"></div>
+            <div class="docs-nav-next">
+              <a href="free-gift/index.html" class="docs-nav-link">
+                <span class="docs-nav-label">Next →</span>
+                <span class="docs-nav-title">Free Gift Promotion</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Right TOC -->
+      <aside class="toc-sidebar">
+        <div class="toc-title">On this page</div>
+        <ul class="toc-list">
+          <!-- Populated by JS -->
+        </ul>
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      &copy; 2026 Yaki. All rights reserved.
+    </footer>
+  </div>
+
+  <!-- Search Modal -->
+  <div id="search-overlay" class="search-overlay">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-search">
+          <circle cx="11" cy="11" r="8" />
+          <path d="m21 21-4.3-4.3" />
+        </svg>
+        <input type="text" id="search-modal-input" class="search-modal-input" placeholder="Search documentation...">
+      </div>
+      <div id="search-results" class="search-results"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/toc.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/components.js"></script>
+</body>
+
+</html>

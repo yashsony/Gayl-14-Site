@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Free Gift Promotion - Yaki Docs</title>
+  <meta name="description" content="Learn how to create a Free Gift promotion in Yaki.">
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/docs.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="layout-wrapper">
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-container">
+        <div class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-gift">
+            <polyline points="20 12 20 22 4 22 4 12" />
+            <rect width="20" height="5" x="2" y="7" />
+            <line x1="12" x2="12" y1="22" y2="7" />
+            <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" />
+            <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
+          </svg>
+          Yaki Docs
+        </div>
+        <div class="header-search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="search-icon lucide lucide-search">
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.3-4.3" />
+          </svg>
+          <input type="text" id="search-input" placeholder="Search documentation... (Cmd+K)" readonly>
+        </div>
+        <button class="mobile-menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-menu">
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="main-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="nav-group">
+          <div class="nav-group-title">Getting Started</div>
+          <ul class="nav-list">
+            <li><a href="../index.html" class="nav-link">Introduction</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-group">
+          <div class="nav-group-title">Promotions</div>
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link active">Free Gift</a></li>
+            <li><a href="#" class="nav-link">Buy X Get Y</a></li>
+            <li><a href="#" class="nav-link">BOGO</a></li>
+            <li><a href="#" class="nav-link">Volume Discount</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-group">
+          <div class="nav-group-title">Configuration</div>
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link">Custom Placement</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-group">
+          <div class="nav-group-title">Support</div>
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link">Troubleshooting</a></li>
+            <li><a href="#" class="nav-link">FAQ</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Content -->
+      <main class="content-area">
+        <div class="content-inner">
+          <div class="breadcrumb">
+            <a href="../index.html">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="#">Promotions</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>Free Gift</span>
+          </div>
+
+          <h1>Create Free Gift Promotion</h1>
+
+          <p>A Free Gift promotion rewards customers with a free item when they meet specific criteria, such as spending
+            a certain amount or buying particular items. This is an excellent strategy to boost your average order value
+            (AOV).</p>
+
+          <div class="callout info">
+            <svg class="callout-icon lucide lucide-info" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 16v-4" />
+              <path d="M12 8h.01" />
+            </svg>
+            <div class="callout-content">
+              <h3 class="callout-title">Info</h3>
+              <p>This guide explains how to set up a standard free gift offer. For multi-tier gifts, refer to the Volume
+                Discount documentation.</p>
+            </div>
+          </div>
+
+          <h2>Step-by-Step Setup</h2>
+
+          <div class="steps-container">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3>Select Promotion Type</h3>
+                <p>From your Yaki dashboard, click on <strong>Create Promotion</strong> and select the <strong>Free
+                    Gift</strong> template.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3>Configure the Trigger</h3>
+                <p>Decide what action triggers the free gift. You can choose:</p>
+                <ul>
+                  <li>Minimum cart subtotal (e.g., Spend $100)</li>
+                  <li>Specific product purchase (e.g., Buy the Signature Jacket)</li>
+                  <li>Collection purchase (e.g., Buy any item from Summer Collection)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3>Select the Gift Product</h3>
+                <p>Choose the product you want to offer for free. Make sure you have sufficient inventory.</p>
+
+                <div class="screenshot-container">
+                  <a href="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+                    class="screenshot screenshot-link">
+                    <!-- Using a placeholder image for demonstration -->
+                    <img
+                      src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+                      alt="Select Gift Product" loading="lazy">
+                  </a>
+                  <div class="screenshot-caption">Figure 1. Select Gift Product Interface</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Best Practices</h2>
+
+          <div class="callout tip">
+            <svg class="callout-icon lucide lucide-lightbulb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5" />
+              <path d="M9 18h6" />
+              <path d="M10 22h4" />
+            </svg>
+            <div class="callout-content">
+              <h3 class="callout-title">Pro Tip</h3>
+              <p>Set your minimum spend threshold 15-20% higher than your current Average Order Value to maximize
+                revenue growth.</p>
+            </div>
+          </div>
+
+          <div class="callout note">
+            <svg class="callout-icon lucide lucide-sticky-note" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8Z" />
+              <path d="M15 3v4a2 2 0 0 0 2 2h4" />
+            </svg>
+            <div class="callout-content">
+              <h3 class="callout-title">Note</h3>
+              <p>The free gift is automatically added to the customer's cart. If they remove the triggering items, the
+                gift will also be removed.</p>
+            </div>
+          </div>
+
+          <h2>Limitations</h2>
+
+          <div class="callout warning">
+            <svg class="callout-icon lucide lucide-triangle-alert" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+              <path d="M12 9v4" />
+              <path d="M12 17h.01" />
+            </svg>
+            <div class="callout-content">
+              <h3 class="callout-title">Warning</h3>
+              <p>Do not select a gift product that requires customer input (e.g., custom engraving text) unless you have
+                enabled the "Gift Options" setting.</p>
+            </div>
+          </div>
+
+          <div class="callout success">
+            <svg class="callout-icon lucide lucide-check-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <path d="m9 11 3 3L22 4" />
+            </svg>
+            <div class="callout-content">
+              <h3 class="callout-title">Success</h3>
+              <p>Once you activate the promotion, it goes live immediately. Customers will instantly see the offer on
+                the storefront.</p>
+            </div>
+          </div>
+
+          <div class="related-articles">
+            <h3>Related Articles</h3>
+            <ul>
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-file-text">
+                    <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                    <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                    <path d="M10 9H8" />
+                    <path d="M16 13H8" />
+                    <path d="M16 17H8" />
+                  </svg> Setting up Trigger Conditions</a></li>
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-file-text">
+                    <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                    <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                    <path d="M10 9H8" />
+                    <path d="M16 13H8" />
+                    <path d="M16 17H8" />
+                  </svg> Managing Out of Stock Gifts</a></li>
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-file-text">
+                    <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                    <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                    <path d="M10 9H8" />
+                    <path d="M16 13H8" />
+                    <path d="M16 17H8" />
+                  </svg> Buy X Get Y vs Free Gift</a></li>
+            </ul>
+          </div>
+
+          <div class="docs-nav">
+            <div class="docs-nav-prev">
+              <a href="../index.html" class="docs-nav-link">
+                <span class="docs-nav-label">← Previous</span>
+                <span class="docs-nav-title">Introduction</span>
+              </a>
+            </div>
+            <div class="docs-nav-next">
+              <a href="#" class="docs-nav-link">
+                <span class="docs-nav-label">Next →</span>
+                <span class="docs-nav-title">Buy X Get Y</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Right TOC -->
+      <aside class="toc-sidebar">
+        <div class="toc-title">On this page</div>
+        <ul class="toc-list">
+          <!-- Populated by JS -->
+        </ul>
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      &copy; 2026 Yaki. All rights reserved.
+    </footer>
+  </div>
+
+  <!-- Search Modal -->
+  <div id="search-overlay" class="search-overlay">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-search">
+          <circle cx="11" cy="11" r="8" />
+          <path d="m21 21-4.3-4.3" />
+        </svg>
+        <input type="text" id="search-modal-input" class="search-modal-input" placeholder="Search documentation...">
+      </div>
+      <div id="search-results" class="search-results"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="../assets/js/app.js"></script>
+  <script src="../assets/js/toc.js"></script>
+  <script src="../assets/js/search.js"></script>
+  <script src="../assets/js/components.js"></script>
+</body>
+
+</html>
